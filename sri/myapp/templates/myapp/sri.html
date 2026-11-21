@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Churn Rate Calculate</title>
+    </head>
+    <body bgcolor="sky blue">
+        <h2>JAYASRI A (26014582)</h2>
+        <form method="POST">
+            {%csrf_token%}
+            <label>Initial_Customers</label>
+            <input type="number" name="initialvalue" value="{{iv}}"><br><br>
+            <label>Lost_Customers</label>
+            <input type="number" name="lostvalue" value="{{lv}}"><br><br>
+            <input type="submit" value="Calculate"><br><br>
+            <label>Churn_Rate</label>
+            <input type="text" value="{{cr}}">
+        </form>
+    </body>
+</html>
